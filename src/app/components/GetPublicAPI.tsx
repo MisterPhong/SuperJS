@@ -28,9 +28,9 @@ export default function GetPublicAPI() {
       <Table>
         <thead>
           <tr>
-            <td>pair</td>
-            <td>volume</td>
-            <td>exchange</td>
+            <td>PAIR</td>
+            <td>VOLUME</td>
+            <td>EXCHANGE</td>
           </tr>
         </thead>
         <tbody>{rows}</tbody>

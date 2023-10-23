@@ -24,6 +24,8 @@ import {
   IconUserOff,
 } from "@tabler/icons-react";
 import Link from "next/link";
+import { Image } from '@mantine/core';
+import { FacebookIcon } from "../(authen)/login/FacebookIcon";
 
 export default function AppLayout({ children }: { children: React.ReactNode }) {
   const theme = useMantineTheme();
@@ -64,7 +66,7 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
 
           <Link href={"testapi"} style={{ textDecoration: "none" }}>
             <NavLink
-              label="Youtube"
+              label="สื่อที่น่าสนใจ"
               icon={<IconBrandYoutube size="1rem" stroke={1.5} />}
             />
           </Link>
@@ -74,7 +76,8 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
       }
       footer={
         <Footer height={60} p="md">
-          Application footer
+          {/* Application footer */}
+          <FacebookIcon />
         </Footer>
       }
       header={
@@ -89,8 +92,9 @@ export default function AppLayout({ children }: { children: React.ReactNode }) {
                 mr="xl"
               />
             </MediaQuery>
-
-            <Text>Application header</Text>
+            
+            
+            <Text>MONEYBIT COMPANY</Text>
           </Group>
         </Header>
       }
